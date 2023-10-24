@@ -1,0 +1,15 @@
+C:\Users\hp\source\repos\InventoTrack2\InventoTrack\bin\Debug\InventoTrack.exe.config
+C:\Users\hp\source\repos\InventoTrack2\InventoTrack\bin\Debug\InventoTrack.exe
+C:\Users\hp\source\repos\InventoTrack2\InventoTrack\bin\Debug\InventoTrack.pdb
+C:\Users\hp\source\repos\InventoTrack2\InventoTrack\obj\Debug\InventoTrack.csproj.AssemblyReference.cache
+C:\Users\hp\source\repos\InventoTrack2\InventoTrack\obj\Debug\MainWindow.g.cs
+C:\Users\hp\source\repos\InventoTrack2\InventoTrack\obj\Debug\App.g.cs
+C:\Users\hp\source\repos\InventoTrack2\InventoTrack\obj\Debug\InventoTrack_MarkupCompile.cache
+C:\Users\hp\source\repos\InventoTrack2\InventoTrack\obj\Debug\InventoTrack_MarkupCompile.lref
+C:\Users\hp\source\repos\InventoTrack2\InventoTrack\obj\Debug\MainWindow.baml
+C:\Users\hp\source\repos\InventoTrack2\InventoTrack\obj\Debug\InventoTrack.g.resources
+C:\Users\hp\source\repos\InventoTrack2\InventoTrack\obj\Debug\InventoTrack.Properties.Resources.resources
+C:\Users\hp\source\repos\InventoTrack2\InventoTrack\obj\Debug\InventoTrack.csproj.GenerateResource.cache
+C:\Users\hp\source\repos\InventoTrack2\InventoTrack\obj\Debug\InventoTrack.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\InventoTrack2\InventoTrack\obj\Debug\InventoTrack.exe
+C:\Users\hp\source\repos\InventoTrack2\InventoTrack\obj\Debug\InventoTrack.pdb
