@@ -6,20 +6,20 @@
         xmlns:local="clr-namespace:InventoTrack"
         mc:Ignorable="d"
         Title="InventoTrack" Height="450" Width="800">
-    <Grid>
-        <Button Content="NEW" HorizontalAlignment="Left" Margin="29,131,0,0" VerticalAlignment="Top" Height="32" Width="160" Click="Button_Click"/>
-        <Button Content="SAVE" HorizontalAlignment="Left" Margin="223,131,0,0" VerticalAlignment="Top" Height="32" Width="160"/>
-        <Button Content="DELETE" HorizontalAlignment="Left" Margin="417,131,0,0" VerticalAlignment="Top" Height="32" Width="160"/>
-        <Button Content="UPDATE" HorizontalAlignment="Left" Margin="613,131,0,0" VerticalAlignment="Top" Height="32" Width="160"/>
-        <DataGrid  Margin="0,183,0,0" SelectionChanged="DataGrid_SelectionChanged"/>
-        <TextBox HorizontalAlignment="Left" Margin="417,91,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="350" Height="27" FontSize="15"/>
-        <TextBox HorizontalAlignment="Left" Margin="29,34,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="350" Height="30" FontSize="15" TextChanged="TextBox_TextChanged"/>
-        <TextBox HorizontalAlignment="Left" Margin="417,34,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="350" Height="30" FontSize="15"/>
+    <Grid x:Name="inventoryGridView">
+        <Button x:Name="NewButton_Click" Content="NEW" HorizontalAlignment="Left" Margin="29,131,0,0" VerticalAlignment="Top" Height="32" Width="160" Click="Button_Click"/>
+        <Button x:Name="SaveButton_Click" Content="SAVE" HorizontalAlignment="Left" Margin="223,131,0,0" VerticalAlignment="Top" Height="32" Width="160"/>
+        <Button x:Name="DeleteButton_Click" Content="DELETE" HorizontalAlignment="Left" Margin="417,131,0,0" VerticalAlignment="Top" Height="32" Width="160"/>
+        <Button x:Name="UpdateButton_Click" Content="UPDATE" HorizontalAlignment="Left" Margin="613,131,0,0" VerticalAlignment="Top" Height="32" Width="160"/>
+        <DataGrid x:Name="DataGridViewCell"  Margin="0,183,0,0" SelectionChanged="DataGrid_SelectionChanged"/>
+        <TextBox x:Name="quantityTextBox" HorizontalAlignment="Left" Margin="417,91,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="350" Height="27" FontSize="15"/>
+        <TextBox x:Name="nameTextBox" HorizontalAlignment="Left" Margin="29,34,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="350" Height="30" FontSize="15" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="priceTextBox" HorizontalAlignment="Left" Margin="417,34,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="350" Height="30" FontSize="15" AutomationProperties.ItemType=""/>
         <TextBlock HorizontalAlignment="Left" Margin="29,71,0,0" TextWrapping="Wrap" Text="Category" VerticalAlignment="Top" FontSize="15" FontWeight="Bold"/>
         <TextBlock HorizontalAlignment="Left" Margin="29,9,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" FontSize="15" FontWeight="Bold"/>
         <TextBlock HorizontalAlignment="Left" Margin="417,9,0,0" TextWrapping="Wrap" Text="Price" VerticalAlignment="Top" FontSize="15" FontWeight="Bold"/>
         <TextBlock HorizontalAlignment="Left" Margin="417,71,0,0" TextWrapping="Wrap" Text="Quantity" VerticalAlignment="Top" FontSize="15" FontWeight="Bold"/>
-        <ComboBox HorizontalAlignment="Left" Margin="29,90,0,0" VerticalAlignment="Top" Width="350" Height="30">
+        <ComboBox x:Name="categoryComboBox" HorizontalAlignment="Left" Margin="29,90,0,0" VerticalAlignment="Top" Width="350" Height="30">
             <ListViewItem Content="Makanan"/>
             <ListViewItem Content="Deterjen"/>
             <ListViewItem Content="Minuman"/>

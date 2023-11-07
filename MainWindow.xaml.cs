@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data;
+using System.ComponentModel;
+using System.Drawing;
 
 namespace InventoTrack
 {
@@ -20,6 +23,7 @@ namespace InventoTrack
     /// </summary>
     public partial class MainWindow : Window
     {
+        DataTable inventory = new DataTable();  
         public MainWindow()
         {
             InitializeComponent();
@@ -29,6 +33,45 @@ namespace InventoTrack
         {
 
         }
+
+        private void newButton_Click(object sender, EventArgs e)
+        {
+            nameTextBox.Text = "";
+            priceTextBox.Text = "";
+            quantityTextBox.Text = "";
+            categoryComboBox.SelectedIndex = -1;
+            DataGridViewCell.Items.Add(nameTextBox.Text);
+        }
+
+        private void saveButton_Click(object sender, EventArgs e)
+        {
+            // Save all the values from our fields into variables
+          
+            String name = nameTextBox.Text;
+            String price = priceTextBox.Text;
+            String quantity = quantityTextBox.Text;
+          
+            String category = (string)categoryComboBox.SelectedItem;
+
+            // Add these values to the datatable
+            inventory.Rows.Add(name, category, price, quantity);
+
+            // Clear fields after save
+            newButton_Click(sender, e);
+        }
+
+        private void deleteButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                inventory.Rows[inventoryGridView.CurrentCell.RowIndex].Delete();
+            }
+            catch (Exception err)
+            {
+                Console.WriteLine("Error: " + err);
+            }
+        }
+
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -42,7 +85,12 @@ namespace InventoTrack
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            asd.Text = "Hello World";
+
+        }
+
+        private void part_TextBox_Copy_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }
